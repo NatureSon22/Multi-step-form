@@ -1,0 +1,113 @@
+.form--tier {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+
+    & > div {
+        padding: 0.6em 1.5em;
+        border: 2px solid var(--neutral-200);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        cursor: pointer;
+    }
+
+    .tier--img {
+        height: 3em;
+        width: 3em;
+    }
+
+    .tier--img img {
+        width: 100%;
+    }
+
+    .tier--info p:nth-child(1) {
+        font-size: 1.2rem;
+        color: var(--primary-100);
+        font-weight: 700;
+    }
+
+    .tier--info p:nth-child(2) {
+        color: var(--neutral-100);
+    }
+
+    .tier--info p:nth-child(3) {
+        color: var(--primary-100);
+        font-weight: 500;
+    }
+}
+
+.form--tier {
+    .clicked {
+        border-color: var(--primary-600);
+        background-color: var(--neutral-300);
+    }
+}
+
+.form--toggle {
+    padding: 1em;
+    margin-top: 2em;
+    background-color: var(--neutral-300);
+    border-radius: 10px;
+
+    & > div {
+        display: flex;
+        gap: 1.5em;
+        align-items: center;
+    }
+
+    & p {
+        color: var(--neutral-100);
+        font-weight: 700;
+    }
+
+    .label {
+        color: var(--primary-100);
+    }
+}
+
+.main--toggle {
+    width: 4em;
+    padding: 0.4em;
+    background-color: var(--primary-100);
+    border-radius: 20px;
+    display: flex;
+
+    .circle {
+        width: 1.2em;
+        height: 1.2em;
+        border-radius: 50%;
+        background-color: var(--neutral-500);
+        cursor: pointer;
+        vertical-align: bottom;
+        transition: margin-left 0.18s;
+    }
+
+    .circle.toggle {
+        margin-left: calc(100% - 1.2em);
+    }
+}
+
+.sub--btn {
+    cursor: pointer;
+}
+
+@media (min-width: 1000px) {
+    .form--tier {
+        flex-direction: row;
+
+        & > div {
+            width: 100%;
+            padding-block: 1em;
+            flex-direction: column;
+            gap: 2.5em;
+            align-items: flex-start;
+        }
+    }
+
+    .form--tier {
+        margin-top: 2.5em;
+    }
+}

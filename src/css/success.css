@@ -1,0 +1,19 @@
+.form--success {
+    padding-block: 5em;
+    gap: 1em;
+
+    & h1 {
+        color: var(--primary-100);
+    }
+
+    & p {
+        text-align: center;
+        color: var(--neutral-100);
+    }
+}
+
+@media (min-width: 1000px) {
+    .form--success {
+        padding-top: 7em;
+    }
+}

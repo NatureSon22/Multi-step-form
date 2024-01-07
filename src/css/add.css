@@ -1,0 +1,67 @@
+.form--more {
+    margin-top: 1em;
+    display: grid;
+    gap: 1em;
+}
+
+.form--service {
+    padding: 1em;
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid var(--neutral-200);
+    border-radius: 10px;
+
+    & > div {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        cursor: pointer;
+    }
+
+    & input {
+        min-width: 1.7em;
+        cursor: pointer;
+        outline: var(--neutral-400);
+    }
+
+    .checkbox {
+        min-width: 1.8em;
+        height: 1.8em;
+        border: 1px solid var(--neutral-200);
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .checkbox.checked {
+        border-color: var(--primary-200);
+        background-color: var(--primary-200);
+        background-image: url(../../assets/images/checkmark.svg);
+        background-repeat: no-repeat;
+        background-size: 1.2em;
+        background-position: center;
+    }
+
+    &.checked {
+        border-color: var(--primary-600);
+    }
+
+    & > p {
+        color: var(--primary-200);
+    }
+}
+
+.form--label {
+    & p:nth-child(1) {
+        font-weight: 700;
+        font-size: 1.1rem;
+        color: var(--primary-100);
+    }
+
+    & p:nth-child(2) {
+        margin-top: 0.3em;
+        color: var(--neutral-100);
+        line-height: 1.4em;
+    }
+}
